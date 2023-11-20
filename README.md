@@ -30,7 +30,7 @@ b. 개발환경<br/>
 - Tools: MariaDB 10.6.7
 ※ 개발은 각 팀원의 윈도우PC를 사용하였으며, DB서버를 따로 구축하여 팀원들의 개발이 용이하도록 하였다
 
-# 설계
+# 2. 설계
 ## 2.1 데이터 구조
 데이터는 distribute_database로 이루어져 있고 각각 distribute_database.rawData 그리고 distribute_database.resultData로 이루어져 있다. rawData는 각 서버 database에 존재하며 id와 title을 갖고 있으며 id는 primary key역할을 한다.
 resultData는 서버A에 존재하며 word값과 count 값을 갖고 있으며 word값이 primary key역할을 한다.
