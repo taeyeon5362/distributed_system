@@ -19,6 +19,9 @@ a. 동작환경
 - Tools: Intellij (java JDK-18)<br/>
 ※ 사설 라이브러리 사용시 Linux에서 .jar 배포 불가능 → Windows 10에서 배포<br/>
 b. 개발환경<br/>
+<Service> <DataBase Server>
+![Captum](./img/dis1.png)
+
 - Service
 -- Envs: Windows 10
 -- Tools: Intellij (java JDK-18)
@@ -34,6 +37,7 @@ resultData는 서버A에 존재하며 word값과 count 값을 갖고 있으며 w
 
 ## 2.2 주요 클래스 설명
 ### 2.2.1 distribute_server 
+![Captum](./img/dis2.png)
 2.2.1.1 RMI (RemoteInterface.java / RemoteServer.java / WordCounting.java) <br/>
 원격으로 메소드를 호출하기 위한 패키지. 서버는 원격으로 명령을 받아 메소드를 호출하고 그 연산을 수행하여야 하기 때문에 필터링 및 워드카운팅을 하는 코드가 구현되어야 하지만, 클라이언트는 코드가 구현되어 있을 필요는 없고 메소드에 기본적인 정보만 명시되어있기만 하면 된다.
 <br/><br/>
