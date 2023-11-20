@@ -23,11 +23,11 @@ b. 개발환경<br/>
 ![Captum](./img/dis1.png)
 
 - Service
--- Envs: Windows 10
--- Tools: Intellij (java JDK-18)
+- Envs: Windows 10
+- Tools: Intellij (java JDK-18)
 - Server
--- Envs: Ubuntu 22.04
--- Tools: MariaDB 10.6.7
+- Envs: Ubuntu 22.04
+- Tools: MariaDB 10.6.7
 ※ 개발은 각 팀원의 윈도우PC를 사용하였으며, DB서버를 따로 구축하여 팀원들의 개발이 용이하도록 하였다
 
 # 설계
@@ -37,7 +37,7 @@ resultData는 서버A에 존재하며 word값과 count 값을 갖고 있으며 w
 
 ## 2.2 주요 클래스 설명
 ### 2.2.1 distribute_server 
-![Captum](./img/dis2.png)
+![Captum](./img/dis2.png)><br/>
 2.2.1.1 RMI (RemoteInterface.java / RemoteServer.java / WordCounting.java) <br/>
 원격으로 메소드를 호출하기 위한 패키지. 서버는 원격으로 명령을 받아 메소드를 호출하고 그 연산을 수행하여야 하기 때문에 필터링 및 워드카운팅을 하는 코드가 구현되어야 하지만, 클라이언트는 코드가 구현되어 있을 필요는 없고 메소드에 기본적인 정보만 명시되어있기만 하면 된다.
 <br/><br/>
